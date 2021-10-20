@@ -1,0 +1,144 @@
+.service-boxes{
+    max-width: 1180px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+}
+.service-box{
+    width: 270px;
+    // height: 270px;
+    background: #2A2A2A;
+    border-radius: 29px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    // margin-right: 40px;
+    display: inline-block;
+    // display: flex;
+
+
+
+
+
+    &__wrap2{
+        display: flex;
+        max-width: 870px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    &__img{
+        padding-top: 56px;
+        padding-bottom: 20px;
+        display: block;
+        // padding-left: 100px;
+        margin: 0 auto;
+    }
+
+
+    &__heading{
+        font-family: "Arodora Pro", "Arial", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        color: #E4E4E4;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 50px;
+        display: block;
+        text-align: center;
+    }
+}
+.service-button-l{
+    display: none;
+}
+.service-button-r{
+    display: none;
+}
+
+//768
+@media only screen and (max-width: 768px) {
+    // .service-boxes{
+    //     display: flex;
+    // }
+    .service-box:nth-child(1){
+        display: none;
+    }
+    .service-box:nth-child(4){
+        display: none;
+    }
+
+    .service-button-l{
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: #E2A300;
+        background-image: url(./../../img/arrow-left-side.png);
+        background-repeat: no-repeat;
+        // background-size: 24px 21px;
+        background-position: center;
+        align-self: center;
+
+    }
+    .service-button-r{
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: #E2A300;
+        background-image: url(./../../img/arrow-left-side.png);
+        background-repeat: no-repeat;
+        // background-size: 24px 21px;
+        background-position: center;
+        transform: rotate(180deg);
+        align-self: center;
+    }
+
+    .service-box{
+        max-width: 150px;
+    }
+    .service-box__wrap2{
+        display: flex;
+        justify-content: center;
+    }
+} //768
+
+//375
+@media only screen and (max-width: 375px){
+    .service-box{
+        max-width: 130px;
+
+        &:nth-child(5){
+            display: none;
+        }
+        &:nth-child(2){
+            display: none;
+        }
+        // &:nth-child(5){
+        //     display: block;
+        // }
+
+
+    }
+    .service-button-r{
+        width: 30px;
+        height: 30px;
+    }
+    .service-button-l{
+        width: 30px;
+        height: 30px;
+        
+    }
+
+} //375

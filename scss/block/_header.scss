@@ -1,0 +1,603 @@
+body{
+    display: flex;
+    overflow-y: hidden;
+}
+.header{
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+
+
+
+}
+.footer-mobile{
+display: none;
+}
+.logotip__box{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo__title{
+    margin: 0;
+    margin-top: -10px;
+    color: #34D1C9;
+    
+    .logo__span{
+        color: rgb(255, 196, 0);
+    }
+}
+.nav{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    &_item{
+       border-bottom: 2px solid #ccc;
+       width: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: start;
+    }
+    &_link{
+        font-size: 18px;
+        transition: .5s;
+        font-weight: 500;
+        color: #444;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        i{
+            font-size: 20px;
+            margin-right: 10px;
+            transition: .5s;
+            font-weight: bold;
+        }
+    }
+    &_link:hover{
+        color: #f00;
+        transform: translateX(8px);
+    }
+    &_link:hover i{
+        color: #f00;
+    }
+    &_link:focus{
+        color: #f00;
+        transform: translateX(8px);
+    }
+    &_link:focus i{
+        color: #f00;
+    }
+}
+.template{
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 500;
+    
+}
+.company{
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__border{
+        &::before{
+            content: "";
+            border: 67px solid rgb(255, 196, 0);
+            background-image: url(./../img/tim-2.jpg) ;
+            background-size: cover;
+            background-repeat: no-repeat;
+            max-width: 475px;
+            height: 475px;
+            border-radius: 50%;
+            display: block;
+            box-sizing: border-box;
+
+            box-shadow: 0px 0px 52px rgb(255, 196, 0),inset 0px 0px 52px rgb(223, 221, 217);
+            z-index: 1;
+            // margin-left: 100px;
+            margin-top: 50px;
+        }
+        &-image1{
+            border-radius: 50%;
+            position: relative;
+            left: 190px;
+            bottom: 500px;
+        }
+        &-image2{
+            border-radius: 50%;
+            position:relative;
+            right: 85px;
+            bottom: 200px;
+        }
+        &-image3{
+            border-radius: 50%;
+            position:relative;
+            right: 195px;
+            bottom: 350px;
+        }
+        &-image4{
+            border-radius: 50%;
+            position:relative;
+            left: 105px;
+            bottom: 350px;
+
+        }
+        &-image5{
+            border-radius: 50%;
+            position: relative;
+            bottom: 200px;
+            z-index: 1;
+        }
+    }
+    &__image{
+        position: relative;
+        right: 480px;
+        bottom: 45px;
+        border-radius: 40%;
+        
+    }
+}
+.company-mobile1{
+    display: none;
+} 
+.logotip__box2{
+    font-size: 42px;
+    line-height: 82px;
+    max-width: 100%;
+    margin-top: -100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo__padding{
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+    font-family: 'Noto Sans Mono', monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: rgb(236, 184, 11);
+    margin-bottom: -10px;
+}
+.logo__title1{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    color: #34D1C9;
+    .logo__span1{
+        color: rgb(255, 196, 0);
+    }
+}
+@media only screen and (max-width:764px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .company-mobile1{
+        display: none;
+    } 
+    .logo__title1{
+      margin-top: 0;
+      position: relative;
+      bottom: 10px;
+    }
+    .footer-mobile{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        right: 0;
+        bottom:0;
+        border: 4px solid white;
+        max-width: 780px;
+        height: 100px;
+        justify-content: space-around;
+        background-color: white;
+        }
+        .nav_item-mobile{
+            list-style-type: none;
+        }
+        .nav_link-mobile{
+            font-size: 40px;
+        }
+    .logo__title{
+        margin: 0;
+        margin-top: -10px;
+        color: #34D1C9;
+        font-size: 40px;
+        line-height: 32px;
+        
+        .logo__span{
+            color: rgb(255, 196, 0);
+        }
+    }
+    .main{
+        max-width: 100%;
+    }
+    .logotip__box{
+        display: none;
+    }
+    .logo__padding{
+        position: relative;
+        bottom: 50px;
+        max-width: 600px;
+        font-family: 'Noto Sans Mono', monospace;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 25px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        color: rgb(236, 184, 11);
+        position: relative;
+        bottom: 20px;
+        left: 10px;
+    }
+    .header{
+        position: fixed;
+        transform: translateY(-20%);
+
+        nav{
+            display: none;
+            transform: translateY(-20%);
+        }
+    }
+}
+@media only screen and (max-width:505px){
+    body{
+        overflow: hidden
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        ;
+    }
+    .company-mobile1{
+        display: none;
+    } 
+    .logotip__box2{
+        padding: 10px;
+        margin-top: 130px;
+    }
+    .logo__title1{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 82px;
+        display: flex;
+        align-items: center;
+        color: #34D1C9;
+        position: relative;
+        bottom: 95px;
+        .logo__span1{
+            color: rgb(255, 196, 0);
+           
+        }
+        .footer-mobile{
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            left:0;
+            right: 0;
+            bottom:0;
+            border: 4px solid white;
+            height: 100px;
+            justify-content: space-around;
+            background-color: white;
+            }
+    }
+
+    .logo__padding{
+        max-width: 600px;
+        font-family: 'Noto Sans Mono', monospace;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        color: rgb(236, 184, 11);
+        position: relative;
+        bottom: 110px;
+
+    }
+    .main{
+        max-width: 100%;
+    }
+    .header{
+        display: none;
+        position: fixed;
+        transform: translateY(-20%);
+
+        nav{
+            transform: translateY(-20%);
+        }
+    }
+    .company{
+        position: relative;
+        bottom: 50px;
+    }
+    .company__border{
+
+        &::before{
+            display: none;
+        }
+    }
+    .company__border-mobile{
+        content: "";
+        border: 40px solid rgb(255, 196, 0);
+        background-image: url(./../img/tim-mobile.png) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        position: relative;
+        top: 100px;
+        box-shadow: 0px 0px 52px rgb(255, 196, 0),inset 0px 0px 52px rgb(223, 221, 217);
+    }
+    .company__border-image1{
+        border-radius: 50%;
+        position:relative;
+        left: 105px;
+        bottom:65px;
+        width: 75px;
+        height: 75px;
+    }
+    .company__border-image2{
+        border-radius: 50%;
+        position:relative;
+        right: 115px;
+        top: 200px;
+        width: 75px;
+        height: 75px;
+    }
+    .company__border-image3{
+        border-radius: 50%;
+        position:relative;
+        right: 210px;
+        top: 60px;
+        width: 75px;
+        height: 75px;
+    }
+    .company__border-image4{
+        border-radius: 50%;
+        position:relative;
+        left: 270px;
+        bottom: 25px;
+        width: 75px;
+        height: 75px;
+
+    }
+    .company__border-image5{
+        border-radius: 50%;
+        position:relative;
+        left: 175px;
+        top: 120px;
+        width: 75px;
+        height: 75px;
+    }
+}
+@media only screen and (max-width:376px){
+    .company-mobile{
+        display: none;
+        .company__border-mobile{
+            display: none;
+           
+        }
+
+    } 
+    .company-mobile1{
+        display: block;
+        .company__border-mobile1{
+            &::before{
+                content: "";
+                border: 37px solid rgb(255, 196, 0);
+                background-image: url(./../img/tim-2.jpg) ;
+                background-size: cover;
+                background-repeat: no-repeat;
+                max-width: 325px;
+                height: 325px;
+                border-radius: 50%;
+                display: block;
+                box-sizing: border-box;
+                box-shadow: 0px 0px 52px rgb(255, 196, 0),inset 0px 0px 52px rgb(223, 221, 217);
+                z-index: 1;
+                margin-top: 50px;
+                margin-left: 35px;
+            }
+        }
+        .company__border-image6{
+            border-radius: 50%;
+            position: relative;
+            left: 170px;
+            bottom: 340px;
+        } 
+        .company__border-image7{
+            border-radius: 50%;
+            position: relative;
+            right: 35px;
+            bottom: 250px;
+        } 
+        .company__border-image8{
+            border-radius: 50%;
+            position: relative;
+            right: 90px;
+            bottom: 140px;
+        } 
+        .company__border-image9{
+            border-radius: 50%;
+            position: relative;
+            left: 105px;
+            bottom: 250px;
+        } 
+        .company__border-image10{
+            border-radius: 50%;
+            position: relative;
+            left: 40px;
+            bottom: 140px;
+        } 
+    }
+    .logo__title1{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 82px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        bottom: 200px ;
+        left: 10px;
+        color: #34D1C9;
+        .logo__span1{
+            color: rgb(255, 196, 0);
+        }
+        .logotip__box2{
+            padding: 10px;
+            // margin-top: 50px;
+        }
+        .company__border-mobile{
+            position: relative;
+            top: 0;
+            max-width: 245px;
+            height: 245px;
+        }
+    }
+
+    .logo__padding{
+        max-width: 600px;
+        font-family: 'Noto Sans Mono', monospace;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        color: rgb(236, 184, 11);
+        position: relative;
+        bottom: 220px;
+        left: 10px;
+    }
+}

@@ -1,0 +1,180 @@
+
+.blog{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    max-width: 100%;
+    &__form{
+        margin-left: 130px;
+        margin-top: 165px;
+        padding-bottom: 40px;
+        max-width: 700px;
+        padding-left: 100px;
+        background-color: #fff;
+        width: 100%;
+        &__submit{
+            background-color: #34D1C9;
+            border: none;
+            max-width: 180px;
+            height: 44px;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 1.5px;
+            margin-left: 185px;
+            margin-top: 30px;
+            border: 2px solid #34D1C9;
+            width: 100%;
+            &:hover{
+                background-color: transparent;
+                color: #34D1C9;
+                transition: 1.2s ease all;
+            }
+        }
+    }
+    &__logotip--box{
+        margin-top: -138px;
+        margin-left: -50px;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 800px;
+    }
+    &__input--name{
+        max-width: 242px;
+        height: 33px;
+        display: block;
+        margin-bottom: 18px;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid #999;
+        color: #999;
+        font-size: 17px;
+        width: 100%;
+        &:focus{
+            outline: none;
+            border-bottom: 2px solid #34D1C9;
+        }
+        &::placeholder{
+            color: #999;
+        }
+    }
+    &__label--name{
+        color: #FFC400;
+        max-width: 100%;
+    }
+    &__input--textarea{
+        color: #999;
+        position: absolute;
+        height: 168px;
+        text-align: center;
+        padding-top: 15px;
+        margin-top: 25px;
+        margin-left: -55px;
+        border-radius: 3px;
+        border: 2px solid #999;
+        background-color: transparent;
+        width: 242px;
+        &:focus{
+            outline: none;
+            border: 2px solid #34D1C9;
+        }
+        &::placeholder{
+            color: #999;
+        }
+    }
+    &__label--tel{
+        color: #239AD6;
+        position: absolute;
+        margin-top: 29px;
+        margin-left: -57px;
+        max-width: 100%;
+    }
+    &__label--email{
+        color: red;
+        position: absolute;
+        margin-top: 29px;
+        margin-left: -31px;
+        max-width: 100%;
+    }
+    &__label--comment{
+        color: yellow;
+        position: absolute;
+        margin-top: 52.5px;
+        margin-left: -35.5px;
+        max-width: 100%;
+    }
+    &__label--lastname{
+        color: #999;
+        position: absolute;
+        margin-top: 29px;
+        margin-left: -55px;
+        max-width: 100%;
+    }
+    &__label--user{
+        color: #999;
+        position: absolute;
+        margin-top: 29px;
+        margin-left: -33px;
+        max-width: 100%;
+    }
+    &__label--textarea{
+        color: #FFC400;
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 330px;
+        max-width: 100%;
+    }
+    
+}
+@media screen and(max-width:1200px) {
+    .blog__form{
+        margin-left: 80px;
+    }
+}
+@media screen and(max-width:1140px) {
+    .blog__form{
+        margin-left: 50px;
+    }
+}
+@media screen and(max-width:1100px) {
+    .blog__form{
+        margin-left: 20px;
+    }
+}
+@media screen and(max-width:1080px) {
+    .blog__form{
+        margin-left: 0px;
+    }
+    .blog__form{
+        width: 330px;
+        padding-bottom: 50px;
+        margin-top: 200px;
+    }
+    .blog__input--name{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .blog__form__submit{
+           display: flex;
+           margin-left: 24px;
+           padding-top: 10px;
+           justify-content: center;
+           margin-top: 250px;
+    }
+    .blog__label--textarea{
+        margin: 0;
+    }
+    .blog{
+        display: flex;
+    }
+    .header{
+        display: none;
+    }
+}

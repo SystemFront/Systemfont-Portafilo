@@ -1,0 +1,195 @@
+.portfolio-part{
+    max-width: 770px;
+    display: flex;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    box-shadow: 0px 4px 15px rgba(27, 27, 27, 0.28);
+    border-radius: 29px;
+    margin: 0 auto;
+    // margin-top: 100px;
+
+    &-left{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    &-right{
+        max-width: 346px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+        &__heading{
+            font-family: "Arodora Pro", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 27px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 25px;
+            justify-content: center;
+        }
+
+        &__text{
+            font-family: "Arodora Pro", "Arial", sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+.portfolio-part-right__link{
+    // margin: 0;
+    // padding: 0;
+    display: flex;
+    margin: 0 auto;
+    // position: relative;
+    margin-top: 10px;
+
+    &__heading{
+        margin: 0;
+        padding: 0;
+        margin-right: 5px;
+        align-self: center;
+        margin-top: -5px;
+    }
+
+
+    &__img{
+        // position: absolute;
+        width: 13px;
+        height: 8px;
+        align-self: center;
+    }
+}
+
+.portfolio-button-l{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #E2A300;
+    background-image: url(./../../img/arrow-left-side.png);
+    background-repeat: no-repeat;
+    // background-size: 24px 21px;
+    background-position: center;
+    align-self: center;
+    // margin-top: 150px;
+    margin-left: -80px;
+    position: absolute;
+}
+
+.portfolio-button-r{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #E2A300;
+    background-image: url(./../../img/arrow-left-side.png);
+    background-repeat: no-repeat;
+    // background-size: 24px 21px;
+    background-position: center;
+    transform: rotate(180deg);
+    align-self: center;
+    position: absolute;
+    margin-left: 790px;
+}
+
+.active-portfolio{
+    position: relative;
+}
+// 988
+@media only screen and (max-width: 948px){
+    .portfolio-button-r{
+        margin-left: 760px;
+    }
+}
+
+@media only screen and (max-width: 838px){
+    .portfolio-button-r{
+        margin-left: 670px;
+    }
+}
+
+
+// tablet 823
+@media only screen and (max-width: 823px){
+    .portfolio-part{
+        display: flex;
+        // padding-top: 200px;
+        // justify-content: flex-start;
+        flex-direction: column;
+        max-width: 500px;
+        margin-bottom: 20px;
+
+        &-left{
+            margin-top: 15px;
+            // margin-bottom: 0px;
+            margin: 0 auto;
+        }
+
+        &-right{
+            max-width: 400px;
+
+            &__heading{
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 10px;
+            }
+
+            &__text{
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+
+.left-img{
+    display: flex;
+    display: flex;
+}
+.portfolio-part-right__link{
+    padding-bottom: 20px;
+}
+
+.portfolio-button-l{
+    margin-left: -600px;
+    margin-top: 220px;
+}
+
+.portfolio-button-r{
+    margin-left: 590px;
+    margin-top: 220px;
+}
+}
+
+
+// 630
+@media only screen and (max-width: 630px){
+    .portfolio-button-l{
+        display: none;
+    }
+    
+    .portfolio-button-r{
+        display: none;
+    }
+} //630
+
+
+// mobile 400px
+@media only screen and (max-width: 400px){
+    .portfolio-part-right{
+        display: none;
+    }
+} //400px

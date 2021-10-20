@@ -1,0 +1,131 @@
+.about{
+    height: 100%;
+    max-height: 100%;
+    .container{
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+    }
+    &__box:hover .image2{
+        transform: translate(23px, -23px) ;
+        opacity: 1;
+    }
+    &__box:hover .image1{
+        transform: translate(10px, -10px);
+        opacity: .8;
+    }
+    &__box:hover .image{
+        transform: translate(0px,-0px);
+        opacity: .6;
+    }
+
+    &__box:hover .images2{
+        transform: translate(-23px, 23px) ;
+        opacity: 1;
+    }
+    &__box:hover .images1{
+        transform: translate(-10px, 10px);
+        opacity: .8;
+    }
+    &__box:hover .images{
+        transform: translate(-0px,0px);
+        opacity: .6;
+    }
+    &__box{
+        position: relative;
+        height: 100%;
+        margin-top: 130px;
+        z-index: 10;
+        
+
+        // .hover__img{
+        //     position: absolute;
+        // }
+        img{
+            border-radius: 30px;
+        }
+        .image, .image1, .image2{
+            position: absolute;
+            right: -200px;
+            transition: .5s ease;
+            top: 50px;
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .images, .images1, .images2{
+            position: absolute;
+            transition: .5s ease;
+            left: -100px;
+            top: -100px;
+        }
+        
+    }
+    .hover__img{
+        width: 550px;
+        height: 350px;
+    }
+    &__info, &__info1, &__info2{
+        position: absolute;
+        bottom: -120px;
+        left: -200px;
+        width: 450px;
+        height: 150px;
+        padding: 10px;
+        background: #999;
+        border-radius: 30px;
+        transition: .5s ease;
+    }
+    &__info, &__info1{
+        width: 450px;
+        height: 150px;
+    }
+    &__box:hover &__info2{
+        transform: translate(23px, -23px) ;
+        opacity: 1;
+    }
+    &__box:hover &__info1{
+        transform: translate(10px, -10px);
+        opacity: .8;
+    }
+    &__box:hover &__info{
+        transform: translate(0px,-0px);
+        opacity: .6;
+    }
+    .border__box1, .border__box2, .border__box3{
+      position: absolute;
+    }
+    .border__box1{
+        border-radius: 50%;
+        width: 250px;
+        height: 250px;
+        border: 30px solid gold;
+        right: -100px;
+        top: -100px;
+        z-index: -1;
+        box-shadow: 0px 4px 20px gold,
+                    inset 0px 4px 20px gold;
+    }
+    .border__box2{
+        border-radius: 50%;
+        width: 380px;
+        height: 380px;
+        border: 30px solid #34D1C9;
+        left: -240px;
+        top: -80px;
+        z-index: -1;
+        box-shadow: 0px 4px 20px #34D1C9,
+                    inset 0px 4px 20px #34D1C9;
+    }
+    .border__box3{
+        border-radius: 50%;
+        width: 280px;
+        height: 280px;
+        border: 30px solid #0f0;
+        right: 50px;
+        top: 130px;
+        z-index: -1;
+        box-shadow: 0px 4px 20px #0f0,
+                  inset 0px 4px 20px #0f0;
+    }
+}

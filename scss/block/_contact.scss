@@ -1,0 +1,131 @@
+.header {
+}
+.contacti{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.link {
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.github {
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.youtube {
+    border-radius: 50%;
+}
+.insta {
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.telagram {
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.tel {
+    border-radius: 50%;
+    margin-right: 40px;
+}
+.link__img {
+    max-width: 950px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        transition: all 1s ease;
+    }
+    img:hover {
+        transform: scale(1.8)
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+    .link__img{
+        flex-direction: column;
+        align-items: center;
+    }
+    .github{
+        width: 105px;
+        margin-bottom: 22px;
+        margin-top: 20px;
+        margin-right: 0;
+        margin-right: 20px;
+    }
+    .youtube{
+        width: 100px;
+        margin-bottom: 22px;
+        margin-right: 0;
+    }
+    .insta{
+        width: 100px;
+        margin-bottom: 22px;
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    .telagram{
+        width: 100px;
+        margin-bottom: 22px;
+        margin-right: 0;
+        margin-left: 30px;
+    }
+    .tel{
+        width: 100px;
+        margin-bottom: 22px;
+        margin-right: 0;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width:365px) {
+    .github{
+        width: 55px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .youtube{
+        width: 50px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .insta{
+        width: 50px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .telagram{
+        width: 50px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .tel{
+        width: 50px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .link__img{
+        justify-content: center;
+        margin-top: 0;
+    }
+    .desctop2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .desctop1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

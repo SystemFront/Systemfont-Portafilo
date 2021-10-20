@@ -1,0 +1,57 @@
+@import "normalnaiz/normalnaiz";
+@import "generals/generals";
+@import "block/header";
+@import "fonts/fonts";
+@import "block/block";
+@import "block/main";
+@import "block/about";
+@import "block/service";
+@import "block/portifolio";
+@import "block/blog";
+@import "block/contact";
+@import "./block/js-css";
+@import "./block/thems";
+main {
+    overflow-x: hidden!important;
+}
+body {
+    overflow-x: hidden;
+}
+#home {
+    animation: nones 1.5s ease;
+
+}
+#contact {
+    display: none;
+    animation: nones 1.5s ease;
+}
+#about {
+    display: none;
+    animation: nones 1.5s ease;
+
+}
+#servis {
+    display: none;
+    animation: nones 1.5s ease;
+}
+#portafilo {
+    animation: nones 1.5s ease;
+    display: none;
+}
+#blog {
+    animation: nones 1.5s ease;
+    display: none;
+}
+@keyframes nones {
+    0% {
+        margin-right: -1500px;
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+
+        margin-right: 0px;
+    }
+}
